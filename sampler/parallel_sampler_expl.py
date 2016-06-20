@@ -76,7 +76,6 @@ def _worker_collect_one_path(G, max_path_length, itr, normalize_reward,
         _targets = obs_nxt
         # KL vector assumes same shape as reward.
         kl = np.zeros(rew.shape)
-        kl_batch_size = 64
         for j in xrange(int(np.ceil(obs.shape[0] / float(kl_batch_size)))):
 
             # Save old params for every update.
