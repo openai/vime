@@ -95,8 +95,6 @@ def _worker_collect_one_path(G, max_path_length, itr, normalize_reward,
                     loss_value = G.dynamics.train_update_fn(
                          _inputs[start:end], _targets[start:end], step_size)
                     kl_div = np.clip(loss_value, 0, 1000)
-                    kl_div = np.clip(
-                         float(G.dynamics.f_kl_div_closed_form()), 0, 1000)
                     # If using replay pool, undo updates.
                     if use_replay_pool:
                         G.dynamics.reset_to_old_params()
