@@ -1,3 +1,5 @@
+**Status:** Archive (code is provided as-is, no updates expected)
+
 # How to run VIME
 
 Variational Information Maximizing Exploration (VIME) as presented in Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks by *R. Houthooft, X. Chen, Y. Duan, J. Schulman, F. De Turck, P. Abbeel* (http://arxiv.org/abs/1605.09674). 
